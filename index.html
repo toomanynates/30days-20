@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account & Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <span class="header__logo-text">FreshBite</span>
+      </div>
+
+      <button class="header__menu-btn" id="menu-btn" aria-label="Open menu">
+        <span class="header__menu-icon"></span>
+        <span class="header__menu-icon"></span>
+        <span class="header__menu-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen Modal Menu -->
+  <div class="modal" id="menu-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modal-close" aria-label="Close menu">×</button>
+      
+      <nav class="modal__nav">
+        <ul class="modal__list">
+          <li class="modal__item"><a href="#" class="modal__link">Menu</a></li>
+          <li class="modal__item"><a href="#" class="modal__link">Rewards</a></li>
+          <li class="modal__item"><a href="#" class="modal__link">Locations</a></li>
+          <li class="modal__item"><a href="#" class="modal__link">About</a></li>
+          <li class="modal__item"><a href="#" class="modal__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">Create an Account</h1>
+        <p class="hero__subtitle">Sign up to order faster and earn rewards.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-section__container">
+        <form class="form" id="order-form">
+          
+          <div class="form__group">
+            <label class="form__label" for="first-name">First Name</label>
+            <input class="form__input" type="text" id="first-name" name="first-name" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="last-name">Last Name</label>
+            <input class="form__input" type="text" id="last-name" name="last-name" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form__group form__group--password">
+            <label class="form__label" for="password">Password</label>
+            <div class="form__password-wrapper">
+              <input class="form__input" type="password" id="password" name="password" required>
+              <button type="button" class="form__password-toggle" id="password-toggle">Show</button>
+            </div>
+            <p class="form__hint">At least 8 characters with a mix of letters and numbers</p>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="mobile">Mobile Number</label>
+            <input class="form__input" type="tel" id="mobile" name="mobile" required>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="birthday">Birthday (MM/DD/YYYY)</label>
+            <input class="form__input" type="text" id="birthday" name="birthday" placeholder="MM/DD/YYYY">
+          </div>
+
+          <button type="submit" class="form__submit">Create Account & Start Order</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2026 FreshBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
